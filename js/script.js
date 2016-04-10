@@ -25,12 +25,12 @@ $(document).ready(function() {
 $(document).scroll(function() {
   if($(this).scrollTop()>=$("#header").position().top-10){
     $(".link-menu").removeClass('active');
-    $("a[href='#header']").addClass('active');
+    $("li>a[href='#header']").addClass('active');
     floatMenu(false);
   }
   if($(this).scrollTop()>=$("#carrosel").position().top-10){
     $(".link-menu").removeClass('active');
-    $("a[href='#header']").addClass('active');
+    $("li>a[href='#header']").addClass('active');
     floatMenu(true);
   }
   if($(this).scrollTop()>=$("#sobre").position().top-67){
